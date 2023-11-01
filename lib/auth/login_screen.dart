@@ -11,13 +11,16 @@ class _LoginScreenState extends State<LoginScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: SingleChildScrollView(
+        body: SingleChildScrollView(
+      child: Center(
         child: Column(
           children: [
-            Image.asset('assets/images/tiktok.png'),
-          ]
-        ),
-      )
-    );
+          Image.asset(
+            'assets/images/tiktok.png',
+            width: 200,
+          ),
+        ]),
+      ),
+    ));
   }
 }
