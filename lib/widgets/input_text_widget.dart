@@ -6,6 +6,8 @@ class InputTextWidget extends StatelessWidget {
   final TextEditingController textEditingController;
   final IconData? iconData;
   final String? assetReference;
+  final String labelString;
+  final bool isObscure;
 
   @override
   Widget build(BuildContext context) {
