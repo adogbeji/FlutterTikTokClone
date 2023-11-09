@@ -9,6 +9,14 @@ class InputTextWidget extends StatelessWidget {
   final String labelString;
   final bool isObscure;
 
+  InputTextWidget({
+    required this.textEditingController, 
+    this.iconData, 
+    this.assetReference,
+    required this.isObscure,
+    required this.labelString,
+  });
+
   @override
   Widget build(BuildContext context) {
     return const Placeholder();
