@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
+import '../widgets/input_text_widget.dart';
+
 class LoginScreen extends StatefulWidget {
   const LoginScreen({super.key});
 
@@ -41,6 +43,9 @@ class _LoginScreenState extends State<LoginScreen> {
               const SizedBox(
                 height: 30,
               ),
+              
+              // EMAIL INPUT FIELD
+              // InputTextWidget(textEditingController: textEditingController, isObscure: isObscure, labelString: labelString)
             ],
           ),
         ),
