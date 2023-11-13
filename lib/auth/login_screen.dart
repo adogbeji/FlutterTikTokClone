@@ -49,7 +49,10 @@ class _LoginScreenState extends State<LoginScreen> {
               ),
               
               // EMAIL INPUT FIELD
-              // InputTextWidget(textEditingController: textEditingController, isObscure: isObscure, labelString: labelString)
+              // InputTextWidget(
+              //   textEditingController: emailTextEditingController,
+              //   labelString: 'Email',
+              // ),
             ],
           ),
         ),
