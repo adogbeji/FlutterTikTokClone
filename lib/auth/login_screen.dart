@@ -55,6 +55,14 @@ class _LoginScreenState extends State<LoginScreen> {
                 iconData: Icons.email_outlined,
                 isObscure: false,
               ),
+
+              // PASSWORD INPUT FIELD
+              InputTextWidget(
+                textEditingController: passwordTextEditingController,
+                labelString: 'Password',
+                iconData: Icons.lock_outline,
+                isObscure: false,
+              ),
             ],
           ),
         ),
