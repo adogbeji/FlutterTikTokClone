@@ -23,6 +23,12 @@ class InputTextWidget extends StatelessWidget {
       controller: textEditingController,
       decoration: InputDecoration(
         labelText: labelString,
+        prefixIcon: iconData != null 
+        ? Icon(iconData): 
+        Padding(
+          padding: const EdgeInsets.all(8),
+          child: Image.asset(assetReference!),
+        ),
       ),
     );
   }
