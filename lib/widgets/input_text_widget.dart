@@ -27,7 +27,10 @@ class InputTextWidget extends StatelessWidget {
         ? Icon(iconData): 
         Padding(
           padding: const EdgeInsets.all(8),
-          child: Image.asset(assetReference!),
+          child: Image.asset(assetReference!, width: 10,),
+        ),
+        labelStyle: const TextStyle(
+          fontSize: 18,
         ),
       ),
     );
