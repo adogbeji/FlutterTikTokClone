@@ -45,6 +45,7 @@ class InputTextWidget extends StatelessWidget {
           ),
         ),
       ),
+      obscureText: isObscure,
     );
   }
 }
