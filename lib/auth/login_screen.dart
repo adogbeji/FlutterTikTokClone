@@ -83,8 +83,14 @@ class _LoginScreenState extends State<LoginScreen> {
 
               // LOGIN BUTTON
               showProgressBar == false ?
-              const Column(
-                children: [],
+              Column(
+                children: [
+                  // Login Button
+                  Container(
+                    width: MediaQuery.of(context).size.width - 38,
+                    height: 54,
+                  ),
+                ],
               ): Container(
                 // Show animations
               ),
