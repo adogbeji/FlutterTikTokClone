@@ -48,7 +48,7 @@ class _LoginScreenState extends State<LoginScreen> {
               const SizedBox(
                 height: 30,
               ),
-              
+
               // EMAIL INPUT FIELD
               Container(
                 width: MediaQuery.of(context).size.width,
@@ -82,22 +82,42 @@ class _LoginScreenState extends State<LoginScreen> {
               ),
 
               // LOGIN BUTTON
-              showProgressBar == false ?
-              Column(
-                children: [
-                  // Login Button
-                  Container(
-                    width: MediaQuery.of(context).size.width - 38,
-                    height: 54,
-                    decoration: BoxDecoration(
-                      color: Colors.white,
-                      borderRadius: BorderRadius.circular(10),
-                    ),
-                  ),
-                ],
-              ): Container(
-                // Show animations
-              ),
+              showProgressBar == false
+                  ? Column(
+                      children: [
+                        // Login Button
+                        Container(
+                          width: MediaQuery.of(context).size.width - 38,
+                          height: 54,
+                          decoration: BoxDecoration(
+                            color: Colors.white,
+                            borderRadius: BorderRadius.circular(10),
+                          ),
+                          child: InkWell(
+                            onTap: () {
+                              setState(() {
+                                showProgressBar = true;
+                              });
+
+                              // Log in user
+                            },
+                            child: const Center(
+                              child: Text(
+                                'Log In',
+                                style: TextStyle(
+                                  fontSize: 20,
+                                  color: Colors.black,
+                                  fontWeight: FontWeight.w700,
+                                ),
+                              ),
+                            ),
+                          ),
+                        ),
+                      ],
+                    )
+                  : Container(
+                      // Show animations
+                      ),
             ],
           ),
         ),
