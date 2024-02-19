@@ -81,6 +81,10 @@ class _LoginScreenState extends State<LoginScreen> {
                 ),
               ),
 
+              const SizedBox(
+                height: 30,
+              ),
+
               // LOGIN BUTTON
               showProgressBar == false
                   ? Column(
@@ -112,6 +116,29 @@ class _LoginScreenState extends State<LoginScreen> {
                               ),
                             ),
                           ),
+                        ),
+
+                        // Sign Up Button
+                        Row(
+                          children: [
+                            const Text(
+                              'Don\'t have an account?',
+                              style: TextStyle(
+                                fontSize: 16,
+                                color: Colors.grey,
+                              ),
+                            ),
+                            InkWell(
+                              onTap: () {
+                                // Send User to sign up screen
+                              },
+                              child: const Text('Sign Up Now', style: TextStyle(
+                                fontSize: 18,
+                                color: Colors.white,
+                                fontWeight: FontWeight.bold,
+                              ),),
+                            ),
+                          ],
                         ),
                       ],
                     )
