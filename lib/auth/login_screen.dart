@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:simple_circular_progress_bar/simple_circular_progress_bar.dart';
 
-import '../widgets/input_text_widget.dart';
+import 'package:tiktok_clone/auth/registration_screen.dart';
+import 'package:tiktok_clone/widgets/input_text_widget.dart';
+// import '../widgets/input_text_widget.dart';
 
 class LoginScreen extends StatefulWidget {
   const LoginScreen({super.key});
@@ -137,6 +140,7 @@ class _LoginScreenState extends State<LoginScreen> {
                             InkWell(
                               onTap: () {
                                 // Send User to sign up screen
+                                Get.to(const RegistrationScreen());
                               },
                               child: const Text('Sign Up Now', style: TextStyle(
                                 fontSize: 18,
