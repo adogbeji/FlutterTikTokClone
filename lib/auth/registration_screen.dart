@@ -45,6 +45,12 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
                   color: Colors.grey,
                 ),
               ),
+              
+              // Profile Avatar
+              GestureDetector(
+                onTap: () {},
+              ),
+
               const SizedBox(
                 height: 30,
               ),
